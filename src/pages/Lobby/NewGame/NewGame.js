@@ -36,6 +36,9 @@ export default function NewGame() {
           start new game
         </Button>
         {/* let's show an error message if there is one */}
+        {idError && (
+          <Typography color='textSecondary'>Error: {idError}</Typography>
+        )}
       </Grid>
     </Grid>
   );
